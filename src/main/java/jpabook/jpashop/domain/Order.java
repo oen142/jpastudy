@@ -19,8 +19,6 @@ public class Order {
     @Column(name = "order_id")
     private Long id;
 
-    @Column(name = "member_id")
-    private Long memberId;
 
     //자동으로 매핑
     private LocalDateTime orderDate;
@@ -36,13 +34,7 @@ public class Order {
         this.id = id;
     }
 
-    public Long getMemberId() {
-        return memberId;
-    }
 
-    public void setMemberId(Long memberId) {
-        this.memberId = memberId;
-    }
 
     public LocalDateTime getOrderDate() {
         return orderDate;
